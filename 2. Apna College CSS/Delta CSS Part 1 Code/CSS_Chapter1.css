@@ -1,0 +1,17 @@
+h2 {
+    color: red;
+    background-color: black;
+}
+
+h3 {
+    color: blue;
+    background-color: grey;
+}
+p{
+    color: blueviolet;
+    background-color: chocolate;
+}
+button{
+    columns: green;
+    background-color: aqua;
+}
