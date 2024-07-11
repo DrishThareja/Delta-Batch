@@ -1,0 +1,37 @@
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+    display: grid;  /* if want to make it an inline block then input value (inline grid)*/
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    /* row-gap: 10px;
+    column-gap: 10px; */
+    /* Short hand */
+    grid-gap: 10px;
+    
+    
+    /* justify-items: start;
+    justify-items: end; */
+    /* justify-items: center; */
+
+    /* align-items: start;
+    align-items: end; */
+    /* align-items: center; */
+
+    /* use place-items: ; instead of justify-items: ; and align-items: ; */
+
+    place-items: center; /* use when both justify-items and align-items values are same */
+}
+
+.item {
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.one {
+    place-self: start;
+}
