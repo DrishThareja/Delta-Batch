@@ -1,0 +1,38 @@
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+
+    /* only the last animation will be applied to use both use shorthand */
+    animation-name: fontAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+
+    animation-name: colorAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fontAnimation {
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 40px;
+    }
+}
+
+@keyframes colorAnimation {
+    from {
+        background-color: bisque;
+    }
+    to {
+        background-color: indianred;
+    }
+}
