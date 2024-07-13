@@ -1,0 +1,40 @@
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+
+    animation: widthAnimation 3s ease-out 0s infinite normal;
+
+    /* or ( if not included widthAnimation in lower merthod and typed*/
+    /* widthAnimation upper method and used both method then*/
+    /* widthAnimation will not work )*/
+
+    animation:
+    fontAnimation 3s ease-out 0s infinite normal,
+    colorAnimation 3s ease-out 0s infinite normal,
+    widthAnimation 3s ease-out 0s infinite normal;
+}
+
+@keyframes widthAnimation {
+    from {width: 10px;}
+    to {width: 400px;}
+    
+}
+
+@keyframes fontAnimation {
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 40px;
+    }
+}
+
+@keyframes colorAnimation {
+    from {
+        background-color: bisque;
+    }
+    to {
+        background-color: indianred;
+    }
+}

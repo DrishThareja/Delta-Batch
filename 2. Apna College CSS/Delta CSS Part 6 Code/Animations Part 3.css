@@ -1,0 +1,19 @@
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    animation: example 3s ease-in 0s infinite normal;
+}
+
+@keyframes example {
+    from {
+        width: 10px;
+        background-color: green;
+    }
+    to {
+        width: 400px;
+        background-color: blue;
+        border-radius: 15px;
+    }
+    
+}
